@@ -53,11 +53,11 @@ class UspsRates extends DataStoreAbstract
         if ($nodeName !== 'and') {
             throw new \InvalidArgumentException('Query must has node "and" with package params');
         }
-        /* @var $innerQuery AndNode  */
+        /* @var $innerQuery AndNode */
         $andQueries = $innerQuery->getQueries();
 
         foreach ($andQueries as $node) {
-            /* @var $node AbstractScalarOperatorNode  */
+            /* @var $node AbstractScalarOperatorNode */
             if ('eq' === $node->getNodeName() && in_array($node->getField(), ShippingData::ORDER)) {
                 $data[$node->getField()] = $node->getValue();
             }

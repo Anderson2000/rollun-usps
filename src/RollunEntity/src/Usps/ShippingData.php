@@ -19,18 +19,18 @@ class ShippingData implements \ArrayAccess
         'Pounds',
         'Ounces',
         'Container', //1.RECTANGULAR or NONRECTANGULAR must be
-//indicated when <Size>LARGE</Size>.For example: <Container>LEGAL FLAT RATE ENVELOPE</Container>
-        'Size', //REGULAR: Package dimensions are 12’’ or less; LARGE: Any package dimension is larger than 12’’
-        'Width', //Pieces may not measure more than 108 inches in length and girth combined, except Parcel Select.
-        'Length', //Parcel Select parcels may not measure more than 130 inches in length and girth combined.
+                     //indicated when <Size>LARGE</Size>.For example: <Container>LEGAL FLAT RATE ENVELOPE</Container>
+        'Size',      //REGULAR: Package dimensions are 12’’ or less; LARGE: Any package dimension is larger than 12’’
+        'Width',     //Pieces may not measure more than 108 inches in length and girth combined, except Parcel Select.
+        'Length',    //Parcel Select parcels may not measure more than 130 inches in length and girth combined.
         'Height',
-//'Girth'  //Units are inches. Required when RateV4Request/Size is LARGE,
-//and RateV4Request/Container is NONRECTANGULAR or VARIABLE/NULL.
-//
+                     //'Girth'  //Units are inches. Required when RateV4Request/Size is LARGE,
+                     //and RateV4Request/Container is NONRECTANGULAR or VARIABLE/NULL.
+                     //
         'Machinable' //RateV4Request[Service='FIRST CLASS' and (FirstClassMailType='LETTER'
-//or FirstClassMailType='FLAT')] RateV4Request[Service=' Retail Ground’]
-//https://pe.usps.com/text/dmm300/201.htm#ep1042477  https://pe.usps.com/text/dmm300/201.htm#a_7_5
-//
+                     //or FirstClassMailType='FLAT')] RateV4Request[Service=' Retail Ground’]
+                     //https://pe.usps.com/text/dmm300/201.htm#ep1042477  https://pe.usps.com/text/dmm300/201.htm#a_7_5
+                     //
     ];
 
     public $data = [];
