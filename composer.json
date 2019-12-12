@@ -39,7 +39,7 @@
     {
       "type": "vcs",
       "url": "git@github.com:rollun-com/rollun-megaplan-api.git"
-    },
+    }
   ],
   "require": {
     "php": "^7.1",
