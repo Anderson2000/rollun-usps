@@ -1,6 +1,7 @@
 {
   "name": "rollun-com/rollun-usps",
   "description": "usps api service",
+  "version": "1",
   "type": "project",
   "homepage": "https://github.com/Anderson2000/rollun-usps",
   "license": "BSD-3-Clause",
